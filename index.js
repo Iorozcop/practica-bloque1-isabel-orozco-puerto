@@ -60,3 +60,11 @@ const colorList = [
     hex: '#c0c0c0'
   }
 ];
+
+let padreUL = document.querySelector('ul');
+console.log(padreUL);
+
+for(let i = 0; i < colorList.length; i++) {
+  let li = document.createElement("li");
+  padreUL.appendChild(li);
+}
