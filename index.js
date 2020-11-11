@@ -62,9 +62,18 @@ const colorList = [
 ];
 
 let padreUL = document.querySelector('ul');
-console.log(padreUL);
 
+//añadimos li al ul recorriendo el array
 for(let i = 0; i < colorList.length; i++) {
   let li = document.createElement("li");
   padreUL.appendChild(li);
 }
+
+let listali = document.querySelectorAll("li");
+
+for(let i=0; i<listali.length; i++){
+  i+=1;
+  listali[i].classList.add("color-item--odd");
+}
+
+console.log(listali);
